@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:ghostwhite;
+    background-image: url("fotosprinc/avioncito4.png");
+    background-size: 35%;
+}
+
+
+#miHeader {
+    border: 1px solid darkgreen; 
+}
+
+header img.logo {
+    max-width: 200%;
+    border: 0px solid whitesmoke;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    max-height: 150px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.icono-red-social {
+    color: black; 
+    transition: color 0.3s ease-in-out;
+     
+}
+
+ .icono-red-social:hover {
+    color: rgb(47, 61, 255);
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+    .redes-sociales {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .redes-sociales a {
+        margin: 0.5em 0; 
+    }
+}
+
+h1 {
+    font-size: 36px;
+    margin: 5px 0; 
+    text-align: center;
+    padding: 0px;
+    
+}
+
+@font-face {
+    font-family: 'Quicksand4';
+    src: url('quicksand_n4.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand5';
+    src: url('quicksand_n5.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand7';
+    src: url('quicksand_n7.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+    padding: 0px;
+    display: inline-block;
+    width: 0%; 
+    height: 0%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0px; 
+    text-align: center;
+}
+
+h1 { background-color: ghostwhite;
+    margin-bottom: 40px;
+}
+
+.catalogo {
+    font-family: 'Quicksand5', sans-serif;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #696969;
+    margin: 0;
+    padding: 0px 0;
+}
+
+.catalogo h1 {
+    --color-subrayado: darkcyan; 
+    border-bottom: 2px solid var(--color-subrayado);
+    display: inline;
+}
+
+
+/* .catalogo::before {
+    content: "+ + + + + + + + "; 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 24px; 
+    color: darkcyan; 
+    transform: translateY(-50%);
+    z-index: -1;
+} */
+
+.categoria {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding-bottom: 0%;
+    padding-top: 0%;
+    margin-top: 0px;
+    position: relative;
+}
+
+.categoria section {
+    flex:content; 
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+h2 {
+    color: #696969;
+    font-family: 'Quicksand4', sans-serif;
+}
+
+p, li { 
+    text-align: center;
+    font-family: 'Quicksand5', sans-serif;
+    color: #696969;
+}
+
+p {
+    padding-top: 10px;
+}
+
+
+.categoria section img {
+    max-width: 100%;
+    height: auto;
+    width: 50%; 
+    max-height:150px; 
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 5px 8px 12px rgba(134, 15, 15, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.categoria section img:hover {
+    transform: scale(1.2); 
+}
+
+
+
+body {
+    min-height:100%; /* Ensure the body takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+}
+
+main {
+    flex: 1; /* Make the main content take the remaining vertical space */
+}
+
+
+footer {
+    background-color: rgb(121, 120, 120);
+    text-align: center;
+    padding: 2px; /* Adjust the padding as needed */
+    margin: 0; /* Remove any default margin */
+    width: 100%;
+    position: fixed; /* Keep the footer fixed at the bottom */
+    bottom: 0;
+    
+}
+
+footer img.logo {
+    width: 60px;
+    height: auto; /* Allow height to adjust proportionally */
+    margin-right: 5px;
+    margin-bottom: -10px;
+}
+
+footer .footer-text {
+    color: #FFE242;
+    font-family: sans-serif;
+}
+
+span {
+    font-family: 'Quicksand5', sans-serif;
+    color: #696969;
+    font-size:large;
+}
+
+
+
+
+
+

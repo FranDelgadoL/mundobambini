@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Quicksand7';
+    src: url('quicksand_n7.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand4';
+    src: url('quicksand_n4.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand7';
+  background-color:ghostwhite;
+}
+
+
+
+/*Imagen de <a href="https://www.freepik.es/vector-gratis/conjunto-marcos-collage-cumpleanos-planos_11827873.
+htm#query=marco&position=39&from_view=search&track=sph&uuid=b86ff94b-cc3c-4794-aae2-aa9591e8a611">Freepik</a>*/
+
+
+ul {
+  width: 50%; 
+  margin: auto; 
+}
+
+ul li {
+  color: rgb(114, 113, 113); 
+  text-align:justify; 
+}
+
+header img.logo {
+  max-width: 200%;
+  border: 0px solid whitesmoke;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  max-height: 150px; 
+  padding-top: 10px;
+}
+
+#miHeader {
+  border: 1px solid darkgreen; 
+  background-color: rgb(57, 196, 142);
+}
+/*"#f7ffee", "#fffbfa", "#effeff", "#fff5e9", "#ffeda3", "#D8E6E8"*/
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.icono-red-social {
+  color: black; 
+  transition: color 0.3s ease-in-out;
+   
+}
+
+.icono-red-social:hover {
+  color: rgb(47, 61, 255);
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+  .redes-sociales {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .redes-sociales a {
+      margin: 0.5em 0; 
+  }
+}
+
+h1 { text-align: center;
+    font-family: 'Quicksand7';
+    color: darkorange;
+}
+
+p {color: darkgray;
+    font-family: 'Quicksand7', sans-serif;
+    text-align: center;
+    line-height: -1;
+ }
+
+ .info {
+  font-size: 12px;
+}
+
+.info p {
+  margin-bottom: 0px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 150px; 
+    margin-bottom: 10px;
+    border: 2px solid darkorange; 
+    border-radius: 8px;
+}
+
+.gallery img.whatsapp-icon {
+    border: none; 
+    cursor: pointer;
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+
+
+#carrito {
+  background-color: #f8f8f8;
+  background-image: url("fotosprinc/avioncito3.png");
+  background-size: 25%;
+  border: 2px solid darkorange;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  max-width: 850px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#carrito:hover {
+  background-color: #ebebeb;
+  transform: scale(1.02);
+}
+
+#carrito h2 {
+  color: darkgoldenrod;
+  font-family: 'Quicksand7', sans-serif;
+  margin-bottom: 15px;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  font-family: 'Quicksand4', sans-serif;
+}
+
+#lista-carrito li {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#lista-carrito li:hover {
+  transform: scale(1.03);
+}
+  
+  #suma-total {
+    font-weight: bold;
+    color: darkorange;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    border:#cccccc;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #a9fa73; 
+  }
+  
+  button + button {
+    background-color: #e44d26; 
+  }
+  
+  button + button:hover {
+    background-color: #d68324; 
+  }
+
+  footer {
+    background-color: rgb(121, 120, 120);
+    text-align: center;
+    padding: 2px; 
+    margin: 0; 
+    width: 100%;
+    position: fixed; 
+    bottom: 0;
+    
+}
+

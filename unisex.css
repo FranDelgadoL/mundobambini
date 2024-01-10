@@ -1,0 +1,31 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Quicksand7';
+    src: url('C:/Users/FranciscoDelgado/Desktop/fd miscel/webtiendita/quicksand_n7.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 { text-align: center;
+    font-family: 'Quicksand7';
+    color: darkgray;
+}
+
+p {color: darkgray;
+    font-family: 'Quicksand7', sans-serif;
+ }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 150px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    margin-bottom: 10px;
+    border: 2px solid darkgray; /* Cambia el grosor y el color del borde según tus preferencias */
+    border-radius: 8px;
+}

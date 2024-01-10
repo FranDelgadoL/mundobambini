@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bambini PY</title>
+    <link rel="stylesheet" href="https://unpkg.com/feather-icons/dist/feather.min.css">
+    <!--  color PNG Designed By 588ku from https://pngtree.com/freepng/square-colored-frame_5410411.html?sol=downref&id=bef -->
+
+</head>
+
+<body>
+       
+    <header id="miHeader">
+        <img class="logo" src="fotosprinc/Mundo3.png" alt="Logo de Bambini">
+
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/mundobambini.py" target="_blank" title="@mundobambini.py">
+                <i data-feather="instagram" class="icono-red-social"></i>
+                <span class="texto-red-social">mundobambini.py</span>
+            </a>
+            <a href="https://wa.me/+595994220871" target="_blank" title="0994220871">
+                <i data-feather="message-circle" class="icono-red-social"></i>
+                <span class="texto-red-social">0994 220871</span>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                <i data-feather="facebook" class="icono-red-social"></i>
+                <span class="texto-red-social">mundobambini</span>
+            </a>
+        </div>
+    
+            
+    </header>
+
+    <script>  
+        function cambiarColorFondo() {
+            var header = document.getElementById("miHeader");
+            var colores = ["#f7ffee", "#fffbfa", "#effeff", "#fff5e9", "#ffeda3", "#D8E6E8"];
+            var colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+            header.style.backgroundColor = colorAleatorio;
+        }
+        setInterval(cambiarColorFondo, 4000);
+    </script> 
+
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+
+    <p> <li>Tienda online de artículos para niños y bebés</li><li>Nuevas y de segunda mano con mucho amor</li>
+    <li>Pick-up y envíos con costo adicional</li><li>No realizamos cambios</li>
+    </p>
+   
+
+<div class="catalogo">
+    <h1>Catálogo</h1>
+</div>
+
+<div class="wrap">
+    <div class="categoria">
+        <section onclick="redirigirAProductos('productos_ninas.html')" oncontextmenu="return abrirEnNuevaPestana('productos_ninas.html');">
+        
+            <img src="fotosprinc/girl.jpg" alt="Niña">
+            <h2>Niñas y Damas</h2>
+
+        </section>
+
+        <section onclick="redirigirAProductos('productos_ninos.html')" oncontextmenu="return abrirEnNuevaPestana('productos_ninos.html');">
+            <img src="fotosprinc/boy.jpg" alt="Niño">
+            <h2>Niños y Caballeros</h2>
+        </section>
+
+        <section onclick="redirigirAProductos('productos_accesorios.html')" oncontextmenu="return abrirEnNuevaPestana('productos_accesorios.html');">
+            <img src="fotosprinc/accesorios.jpg" alt="Accesorios">
+            <h2>Accesorios y otros</h2>
+        </section>
+
+    
+    </div>
+
+</div>
+
+<script>
+    function redirigirAProductos(url) {
+        console.log('Redirigiendo a: ' + url);
+        window.location.href = url;
+    }
+
+    function abrirEnNuevaPestana(url) {
+        window.open(url, '_blank');
+        return false; // Cancela el menú contextual predeterminado
+    }
+
+</script>  
+
+
+<footer>
+    <p class="footer-text">Desarrollado por <img src="fotosprinc/gasrecort3.png" class="logo" alt="Logo GAS"> &copy; 2023 - Todos los derechos reservados.</p>
+</footer>
+
+
+</body>
+</html>
